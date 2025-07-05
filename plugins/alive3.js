@@ -16,8 +16,8 @@ try{
  
 
  
- const botname = "𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐌𝐃"; //add your name
- const ownername = "𝐌𝐑 𝐅𝐑𝐀𝐍𝐊"; // add your name
+ const botname = "𝐄𝐍𝐂𝐑𝐘𝐏𝐓𝐎 𝐌𝐃"; //add your name
+ const ownername = "𝐃𝐔𝐃𝐀𝐒"; // add your name
  const subzero = { 
  key: { 
   remoteJid: 'status@broadcast', 

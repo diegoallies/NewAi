@@ -250,7 +250,7 @@ cmd({
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363304325601080@newsletter',
-          newsletterName: "𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐌𝐃",
+          newsletterName: "𝐄𝐍𝐂𝐑𝐘𝐏𝐓𝐎 𝐌𝐃",
           serverMessageId: 143,
         },
       },

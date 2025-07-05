@@ -57,8 +57,8 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         // Calculate total commands from the commands collection (supports both arrays and objects)
         const totalCommands = Array.isArray(commands) ? commands.length : Object.keys(commands).length;
         
-        const botname = "𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐌𝐃"; //add your name
-const ownername = "𝐌𝐑 𝐅𝐑𝐀𝐍𝐊"; // add your name
+        const botname = "𝐄𝐍𝐂𝐑𝐘𝐏𝐓𝐎 𝐌𝐃"; //add your name
+const ownername = "𝐃𝐔𝐃𝐀𝐒"; // add your name
 
 const subzero = { 
   key: { 
@@ -448,7 +448,7 @@ ${readMore}
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363304325601080@newsletter',
-                        newsletterName: '🍁『 𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐌𝐃 』🍁 ',
+                        newsletterName: '🍁『 𝐄𝐍𝐂𝐑𝐘𝐏𝐓𝐎 𝐌𝐃 』🍁 ',
                         serverMessageId: 143
                     }
                 }

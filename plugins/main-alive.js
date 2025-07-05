@@ -36,7 +36,7 @@ cmd({
 
  \`Status\`: *Subzero is online! 🤗🚀*
 
-> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐌𝐑 𝐅𝐑𝐀𝐍𝐊. 
+> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐃𝐔𝐃𝐀𝐒. 
 🔗 ${config.REPO}
 `.trim();
 
