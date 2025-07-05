@@ -1,0 +1,54 @@
+# === Node ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === Logs ===
+*.log
+
+# === Environment Variables ===
+.env
+.env.*.local
+
+# === JetBrains / WebStorm ===
+.idea/
+*.iml
+*.iws
+out/
+
+# === OS/System Files ===
+.DS_Store
+Thumbs.db
+
+# === Build Output ===
+dist/
+build/
+.cache/
+.temp/
+*.tsbuildinfo
+
+# === VS Code (if using) ===
+.vscode/
+
+# === Optional - Lock files ===
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# === Testing ===
+coverage/
+.nyc_output/
+
+# === Misc ===
+*.tgz
+*.bak
+*.swp
+*.swo
+
+# === TypeScript ===
+*.tsbuildinfo
+
+# === ESLint Cache ===
+.eslintcache
