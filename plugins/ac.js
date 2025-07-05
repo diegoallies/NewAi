@@ -140,11 +140,11 @@ ${readMore}
 ${menuSections}
 
 *━━━━━━━━━━━━━━━━━━━━*⁠⁠⁠⁠
-> ＭＡＤＥ ＢＹ ＭＲ ＦＲＡＮＫ
+> ＭＡＤＥ ＢＹ ＤＵＤＡＳ
 *━━━━━━━━━━━━━━━━━━━━━*
 `;
 
-        const imageUrl = config.BOT_IMAGE || 'https://i.postimg.cc/XNTmcqZ3/subzero-menu.png';
+        const imageUrl = config.BOT_IMAGE || 'https://camo.githubusercontent.com/0965bd555f54ab382c6270592e4856142514efde045ac1c4bfe66b567f60c097/68747470733a2f2f692e6962622e636f2f513979643974522f494d472d32303235303131372d5741303039372e6a7067';
         
         await conn.sendMessage(
             from,
