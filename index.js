@@ -1,6 +1,6 @@
 
 
-// SUBZERO CREATED BY DARRELL MUCHERI
+// ＥＮＣＲＹＰＴＯ CREATED BY DARRELL MUCHERI
 
 const axios = require('axios')
 const config = require('./config')
@@ -117,7 +117,7 @@ async function loadSession() {
 
         // GitHub Session Loader
         if (config.SESSION_ID.startsWith('SUBZERO~')) {
-            console.log('[🌐] Detected Subzero-DB session storage');
+            console.log('[🌐] Detected ENCRYPTO-DB session storage');
             const fileSha = config.SESSION_ID.replace("SUBZERO~", "");
 
             try {
@@ -248,7 +248,7 @@ async function connectToWA() {
                 console.log('[❄️] Connection closed, please change session ID');
             }
         } else if (connection === 'open') {
-            console.log('[❄️] SubZero MD Connected ✅');
+            console.log('[❄️] ENCRYPTO MD Connected ✅');
 
 
             // Load plugins
@@ -287,8 +287,8 @@ async function connectToWA() {
                 const username = `mrfr8nk`;
                 const mrfrank = `https://github.com/${username}`;
 
-                const upMessage = `\`SubZero Bot Connected!\` ✅
-\n\n> _Light, Cold, Icy, Fast & Rich Loaded With Features, SubZero W.A Bot._\n\n────────────────
+                const upMessage = `\`Encrypto Bot Connected!\` ✅
+\n\n> _Light, Cold, Icy, Fast & Rich Loaded With Features, Encrypto W.A Bot._\n\n────────────────
 > 🌟 \`Star Repo\` : 
 ${config.REPO}\n
 > 🎀 \`Follow Us\` :
@@ -317,7 +317,7 @@ ${mrfrank}\n
 
                 // Send settings menu after connection message
                 const cmdList = ` ----------------------------------------
-    \`\`\`SUBZERO BOT SETTINGS\`\`\`
+    \`\`\`ENCRYPTO BOT SETTINGS\`\`\`
     -----------------------------------------
     
 🔧 *1. \`Mode\`*
@@ -390,7 +390,7 @@ ${mrfrank}\n
    - Usage: ${config.PREFIX}setprefix <new_prefix>
    
  🤖 *16. \`Set Bot Name\`*
-   - Current Bot Name' ${config.BOT_NAME || "SUBZERO MD"}
+   - Current Bot Name' ${config.BOT_NAME || "ENCRYPTO MD"}
    - Usage: ${config.PREFIX}setbotname <new_name>
    
  🤴 *17. \`Set Owner Name\`*
@@ -423,7 +423,7 @@ ${mrfrank}\n
                     ai: true,
                     caption: cmdList
                 }, {
-                    quoted: subzero
+                    quoted: ENCRYPTO
 
                 }); */
 
@@ -477,7 +477,7 @@ ${mrfrank}\n
             const metadata = await conn.newsletterMetadata("jid", "120363304325601080@newsletter");
        if (metadata.viewer_metadata === null) {
             await conn.newsletterFollow("120363304325601080@newsletter");
-            console.log("SUBZERO MD CHANNEL FOLLOW ✅");
+            console.log("ENCRYPTO MD CHANNEL FOLLOW ✅");
         }
 
 
@@ -1156,7 +1156,7 @@ if (mek.key && newsletterJids.includes(mek.key.remoteJid)) {
 }
 /* 
   app.get("/", (req, res) => {
-  res.send("SUBZERO STARTED ✅");
+  res.send("ENCRYPTO STARTED ✅");
   });
 */
 app.use(express.static(path.join(__dirname, 'lib')));

@@ -132,7 +132,7 @@ async (conn, mek, m, { from, pushname, reply }) => {
 ▧ *ᴄᴏᴍᴍᴀɴᴅs* : ${totalCommands}
 ⟣──────────────────⟢
 
-> ＳＵＢＺＥＲＯ - ＭＤ- ＢＯＴ
+> ＥＮＣＲＹＰＴＯ - ＭＤ - ＢＯＴ
 
 ⟣──────────────────⟢
 ${readMore}
