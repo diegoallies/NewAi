@@ -267,7 +267,7 @@ async function connectToWA() {
                 // const username = config.REPO.split('/').slice(3, 4)[0];
                 const botname = "𝐄𝐍𝐂𝐑𝐘𝐏𝐓𝐎 𝐌𝐃"; //add your name
                 const ownername = "𝐃𝐔𝐃𝐀𝐒"; // add your name
-                const subzero = {
+                const encrypto = {
                     key: {
                         remoteJid: 'status@broadcast',
                         participant: '0@s.whatsapp.net'

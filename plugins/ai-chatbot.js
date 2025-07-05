@@ -9,7 +9,7 @@ let AI_MODE = "all"; // Default mode: respond everywhere
 
 cmd({
     pattern: "aichat",
-    alias: ["chatbot", "subzerobot"],
+    alias: ["chatbot", "encryptobot"],
     desc: "Enable or disable AI chatbot responses",
     category: "settings",
     filename: __filename,
@@ -87,7 +87,7 @@ cmd({
 
         // Encode message for the query
         const query = encodeURIComponent(body);
-        const prompt = encodeURIComponent("you are subzero md whatsapp bot made by mr frank ofc ( darrell mucheri ). a tech genius in zimbabwe. act smart and enigmatic about personal stuff about him. He is 17 years (2025).Every mesaage you reply put footer \n> �ᴘᴏᴡᴇʀᴇᴅ ʙʏ �ᴍʀ ғʀᴀɴᴋ 🤖");
+        const prompt = encodeURIComponent("you are encrypto md whatsapp bot made by mr frank ofc ( darrell mucheri ). a tech genius in zimbabwe. act smart and enigmatic about personal stuff about him. He is 17 years (2025).Every mesaage you reply put footer \n> �ᴘᴏᴡᴇʀᴇᴅ ʙʏ �ᴍʀ ғʀᴀɴᴋ 🤖");
 
         // BK9 API Request
         const apiUrl = `https://bk9.fun/ai/BK93?BK9=${prompt}&q=${query}`;
@@ -119,7 +119,7 @@ let AI_ENABLED = "false"; // Default enabled
 
 cmd({
     pattern: "aichat",
-    alias: ["chatbot", "subzerobot"],
+    alias: ["chatbot", "encryptobot"],
     desc: "Enable or disable AI chatbot responses",
     category: "settings",
     filename: __filename,
@@ -168,7 +168,7 @@ cmd({
 
         // Encode message for the query
         const query = encodeURIComponent(body);
-        const prompt = encodeURIComponent("you are subzero md whatsapp bot made by mr frank ofc ( darrell mucheri ). a tech genius in zimbabwe. act smart and enigmatic about personal stuff about him. He is 17 years (2025).Every mesaage you reply put footer \n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ғʀᴀɴᴋ 🤖");
+        const prompt = encodeURIComponent("you are encrypto md whatsapp bot made by mr frank ofc ( darrell mucheri ). a tech genius in zimbabwe. act smart and enigmatic about personal stuff about him. He is 17 years (2025).Every mesaage you reply put footer \n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ғʀᴀɴᴋ 🤖");
 
         // BK9 API Request
         const apiUrl = `https://bk9.fun/ai/BK93?BK9=${prompt}&q=${query}`;
@@ -257,7 +257,7 @@ cmd({
 
     // Encode message for the query
     const query = encodeURIComponent(body);
-    const prompt = encodeURIComponent("you are subzero md whatsapp bot made by mr frank ofc ( darrell mucheri ). a tech genius in zimbabwe. act smart and enigmatic about personal stuff about him. He is 17 years (2025).Every mesaage you reply put footer \n> Powered By Mr Frank");
+    const prompt = encodeURIComponent("you are encrypto md whatsapp bot made by mr frank ofc ( darrell mucheri ). a tech genius in zimbabwe. act smart and enigmatic about personal stuff about him. He is 17 years (2025).Every mesaage you reply put footer \n> Powered By Mr Frank");
 
     // BK9 API Request
     const apiUrl = `https://bk9.fun/ai/BK93?BK9=${prompt}&q=${query}`;

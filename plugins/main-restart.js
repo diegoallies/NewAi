@@ -57,7 +57,7 @@ cmd({
 async (conn, mek, m, { from, reply }) => {
     try {
         // ASCII Art Header
-        const subzeroArt = `
+        const encryptoArt = `
                                     
 ╭──╴╴╴╴╴▢ *𝐒𝐔𝐁𝐙𝐄𝐑𝐎 𝐁𝐎𝐓* ▢
 > ┃  🚀 Project: ${config.BOT_NAME || "SubZero MD"}     
@@ -68,7 +68,7 @@ async (conn, mek, m, { from, reply }) => {
 
         // Initial warning message
         const warningMsg = await conn.sendMessage(from, { 
-            text: `${subzeroArt}\n\n⚠️ *SYSTEM RESTART INITIATED!*\n\n` + 
+            text: `${encryptoArt}\n\n⚠️ *SYSTEM RESTART INITIATED!*\n\n` +
                   "🔄 The bot will restart in 3 seconds...\n" +
                   "⏳ Please wait 15-20 seconds before using commands"
         });
@@ -88,7 +88,7 @@ async (conn, mek, m, { from, reply }) => {
             await sleep(frame.delay);
             try {
                 await conn.sendMessage(from, {
-                    text: `${subzeroArt}\n\n${frame.text}`,
+                    text: `${encryptoArt}\n\n${frame.text}`,
                     edit: messageKey
                 });
             } catch (editError) {

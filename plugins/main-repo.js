@@ -4,7 +4,7 @@ const axios = require('axios');
 
 cmd({
   pattern: 'script',
-  alias: ['sc', 'subzero', 'repo'],
+  alias: ['sc', 'encrypto', 'repo'],
   react: '❄️',
   desc: 'Show SubZero MD script information',
   category: 'info',

@@ -1,6 +1,6 @@
 
 {
-    "bot-name": "SUBZERO-MD",
+    "bot-name": "ENCRYPTO-MD",
     "description": "Whiskey Sockets Baileys Whatsapp bot By Mr Frank",
     "logo": "https://i.postimg.cc/zv76KffW/IMG-20250115-WA0020.jpg",
     "keywords": ["bot"],
@@ -9,7 +9,7 @@
   
     "env": {
       "SESSION_ID": {
-        "description": "Put your SESSION_ID here. It starts with SUBZERO-MD~",
+        "description": "Put your SESSION_ID here. It starts with ENCRYPTO-MD~",
         "value":"",
         "required": true
         

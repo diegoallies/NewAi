@@ -2,7 +2,7 @@
 const { cmd } = require("../command");
 
 cmd({
-    pattern: "subzeroinc",
+    pattern: "encryptoinc",
     alias: ["about","creator","mrfrank","developer","support","channel","group"],
     desc: "All About The Bot & Dev",
     category: "fun",

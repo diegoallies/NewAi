@@ -77,11 +77,11 @@ cmd({
     try {
         const [command, targetUserId, superadminPassphrase] = body.split(' ');
         if (!targetUserId || !superadminPassphrase) {
-            return reply("[⚠️] Please provide the target user ID and superadmin passphrase.\n Example: `.resetpassphrase 1234567890@c.us subzero_bot`");
+            return reply("[⚠️] Please provide the target user ID and superadmin passphrase.\n Example: `.resetpassphrase 1234567890@c.us encrypto_bot`");
         }
 
         // Verify superadmin passphrase
-        if (superadminPassphrase !== "subzero_bot") {
+        if (superadminPassphrase !== "encrypto_bot") {
             return reply("❌ Invalid superadmin passphrase. Access denied ☝.");
         }
 

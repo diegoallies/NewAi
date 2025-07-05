@@ -40,7 +40,7 @@ const imageUrl = config.BOT_IMAGE ||  'https://camo.githubusercontent.com/0965bd
 
 cmd({
     pattern: "menu",
-    desc: "subzero menu",
+    desc: "encrypto menu",
     alias: "help",
     category: "menu",
     react: "✅",
@@ -60,7 +60,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const botname = "𝐄𝐍𝐂𝐑𝐘𝐏𝐓𝐎 𝐌𝐃"; //add your name
 const ownername = "𝐃𝐔𝐃𝐀𝐒"; // add your name
 
-const subzero = { 
+const encrypto = {
   key: { 
     remoteJid: 'status@broadcast', 
     participant: '0@s.whatsapp.net' 
