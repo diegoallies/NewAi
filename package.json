@@ -1,12 +1,12 @@
 {
-  "name": "SUBZERO-MD",
+  "name": "ENCRYPTO-MD",
   "version": "3.8.0",
   "description": "THE BEST BOT IN THE UNIVERSE",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name SUBZERO-MD",
-    "stop": "pm2 stop SUBZERO-MD",
-    "restart": "pm2 restart SUBZERO-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name ENCRYPTO-MD",
+    "stop": "pm2 stop ENCRYPTO-MD",
+    "restart": "pm2 restart ENCRYPTO-MD"
   },
   "dependencies": {
    "@whiskeysockets/baileys": "npm:baileys-pro@latest",

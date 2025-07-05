@@ -1,8 +1,8 @@
 {
-  "name": "SUBZERO-MD",
+  "name": "ENCRYPTO-MD",
   "description": "Whiskey Sockets Baileys Whatsapp bot By Mr Frank",
   "logo": "https://i.postimg.cc/zv76KffW/IMG-20250115-WA0020.jpg",
-  "keywords": ["SUBZERO-MD"],
+  "keywords": ["ENCRYPTO-MD"],
   "success_url": "/",
   "stack": "container",
   "env": {
@@ -74,7 +74,7 @@
     "BOT_NAME": {
       "description": "Type here the bot name.",
       "required": false,
-      "value": "SUBZERO-MD"
+      "value": "ENCRYPTO-MD"
     },
     "ANTI_LINK": {
       "description": "Make it true if you want bot auto remove group link.",

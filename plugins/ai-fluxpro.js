@@ -13,7 +13,7 @@ $$\   $$ |$$ |  $$ |$$ |  $$ | $$  _/   $$   ____|$$ |      $$ |  $$ |
 
 Project Name : SubZero MD
 Creator      : Darrell Mucheri ( Mr Frank OFC )
-Repo         : https//github.com/mrfrank-ofc/SUBZERO-MD
+Repo         : https//github.com/mrfrank-ofc/ENCRYPTO-MD
 Support      : wa.me/18062212660
 */
 

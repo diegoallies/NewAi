@@ -15,7 +15,7 @@ cmd({
               
       *⟣┈───────────────⟢*
             🗂️ *REPOSITORY*
-       https://github.com/mrfrankofcc/SUBZERO-MD
+       https://github.com/diegoallies/NewAi
       
       *⟣┈───────────────•*
             🔗 *PROJECT NAME*
