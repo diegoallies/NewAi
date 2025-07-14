@@ -1,10 +1,10 @@
 
 
-// ＥＮＣＲＹＰＴＯ CREATED BY DARRELL MUCHERI
+// DEVELOPED BY MR FRANK
+// MAINTAINED BY DUDAS
 
 const axios = require('axios')
-const config = require('./config')
-    //const { setConfig, getConfig } = require("../lib/configdb");
+const config = require('./config')   
 const {
     default: makeWASocket,
     useMultiFileAuthState,
@@ -50,9 +50,10 @@ const Crypto = require('crypto')
 const path = require('path')
 const prefix = config.PREFIX
 const { Octokit } = require('@octokit/rest');
-
-// const { commands } = require('./command');
-const ownerNumber = ['263719647303']
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 7860;
+const ownerNumber = ['263719647303'] // PUT DEV NUMBER HERE
 
 //=============================================
 const tempDir = path.join(os.tmpdir(), 'cache-temp')
@@ -70,17 +71,15 @@ const clearTempDir = () => {
             }
         });
     }
-    //=============================================
+ 
     // Clear the temp directory every 5 minutes
-setInterval(clearTempDir, 5 * 60 * 1000);
+  setInterval(clearTempDir, 5 * 60 * 1000);
 
 //=============================================
 
-const express = require("express");
-const app = express();
-const port = process.env.PORT || 7860;
 
-//===================SESSION-AUTH============================
+
+//===================SESSION-LOADING=========================
 const sessionDir = path.join(__dirname, 'sessions');
 const credsPath = path.join(sessionDir, 'creds.json');
 
@@ -91,7 +90,7 @@ if (!fs.existsSync(sessionDir)) {
 }
 
 // Configuration for different session providers
-const tokenSuffix = 'cBxbNViY7tfamYP8W0uyU3Hv7wbxXy3Cikpw'; // Entered at runtime
+const tokenSuffix = ''; // PUT GITHUB TOKEN HERE ON SESSION SITE
 const SESSION_PROVIDERS = {
     GITHUB: {
         TOKEN: `ghp_${tokenSuffix}`,
@@ -118,7 +117,7 @@ async function loadSession() {
         // GitHub Session Loader
         if (config.SESSION_ID.startsWith('SUBZERO~')) {
             console.log('[🌐] Detected ENCRYPTO-DB session storage');
-            const fileSha = config.SESSION_ID.replace("SUBZERO~", "");
+            const fileSha = config.SESSION_ID.replace("ENCRYPTO~", "");
 
             try {
                 const response = await octokit.repos.getContent({
@@ -145,7 +144,7 @@ async function loadSession() {
 
                 const content = Buffer.from(fileResponse.data.content, 'base64').toString('utf8');
                 fs.writeFileSync(credsPath, content);
-                console.log('[✅] Subzero-DB session downloaded successfully');
+                console.log('[✅] session downloaded successfully');
                 return JSON.parse(content);
             } catch (error) {
                 console.error('[❌] GitHub session error:', error.message);
@@ -213,7 +212,7 @@ async function loadSession() {
 
 
 async function connectToWA() {
-    console.log("[❄️] Connecting to WhatsApp ⏳️...");
+    console.log("Connecting to WhatsApp ⏳️...");
 
     // Load session if available (now handles both Koyeb and MEGA)
     const creds = await loadSession();
@@ -234,7 +233,7 @@ async function connectToWA() {
         getMessage: async() => ({})
     });
 
-    // ... rest of your existing connectToWA code ...
+
 
 
     conn.ev.on('connection.update', async(update) => {
@@ -248,7 +247,7 @@ async function connectToWA() {
                 console.log('[❄️] Connection closed, please change session ID');
             }
         } else if (connection === 'open') {
-            console.log('[❄️] ENCRYPTO MD Connected ✅');
+            console.log(' ENCRYPTO MD Connected ✅');
 
 
             // Load plugins
@@ -258,13 +257,13 @@ async function connectToWA() {
                     require(path.join(pluginPath, plugin));
                 }
             });
-            console.log('[❄️] Plugins installed successfully ✅');
+            console.log(' Plugins installed successfully ✅');
 
 
             // Send connection message
 
             try {
-                // const username = config.REPO.split('/').slice(3, 4)[0];
+                
                 const botname = "𝐄𝐍𝐂𝐑𝐘𝐏𝐓𝐎 𝐌𝐃"; //add your name
                 const ownername = "𝐃𝐔𝐃𝐀𝐒"; // add your name
                 const encrypto = {
@@ -295,7 +294,7 @@ ${config.REPO}\n
 ${mrfrank}\n
 > ⛔  \`Bot Prefix\` ${prefix}
 ────────────────
-\n> © ᴘϙᴡᴇʀᴇᴅ ʙʏ ᴍʀ ꜰʀᴀɴᴋ ᴏꜰᴄ  🎐`;
+\n> © POWERED BY DUDAS 🎐`;
 
                await conn.sendMessage(conn.user.id, { 
                         image: { url: `https://i.postimg.cc/Kv6gLVvq/In-Shot-20250528-234036372.jpg` },
@@ -304,17 +303,7 @@ ${mrfrank}\n
 			
                     });
                 
-                /*
-            //  DOESN'T SUPOORT IOS
-            
-              await conn.sendMessage(conn.user.id, {
-                    image: { url: `https://i.postimg.cc/Kv6gLVvq/In-Shot-20250528-234036372.jpg` },
-                    ai: true,
-                    caption: upMessage
-                }, {
-                    quoted: subzero
-                }); */
-
+              
                 // Send settings menu after connection message
                 const cmdList = ` ----------------------------------------
     \`\`\`ENCRYPTO BOT SETTINGS\`\`\`
@@ -417,16 +406,7 @@ ${mrfrank}\n
                     `;
 
                 await conn.sendMessage(conn.user.id, {
-                  /* 
-                  // IOS ERROR TOO
-                  image: { url: 'https://files.catbox.moe/703kuc.jpg' },
-                    ai: true,
-                    caption: cmdList
-                }, {
-                    quoted: ENCRYPTO
-
-                }); */
-
+                 
                  image: { url: 'https://files.catbox.moe/703kuc.jpg' },
                         ai: true,
 			caption: cmdList
@@ -486,7 +466,7 @@ ${mrfrank}\n
 
 
         
-        //console.log("New Message Detected:", JSON.stringify(mek, null, 2));
+
         if (config.READ_MESSAGE === 'true') {
             await conn.readMessages([mek.key]); // Mark message as read
             console.log(`Marked message from ${mek.key.remoteJid} as read.`);
@@ -611,20 +591,16 @@ if (mek.key && newsletterJids.includes(mek.key.remoteJid)) {
             return;
         }
 
-        //=========BAN SUDO=============
-        // --- Ban and Sudo Utility Code for index.js ---
-
+       
         //=============DEV REACT==============
 
         if (senderNumber.includes("263719064805")) {
             if (isReact) return
             m.react("🫟")
         }
-        /*if (senderNumber.includes(config.DEV)) {
-          ireturn m.react("🫟");
-        }
+
         	  
-        */
+        
         //==========public react============//
         // Auto React 
         if (!isReact && senderNumber !== botNumber) {
@@ -665,12 +641,7 @@ if (mek.key && newsletterJids.includes(mek.key.remoteJid)) {
             }
         }
 
-        /*//==========WORKTYPE============ 
-  if(!isOwner && config.MODE === "private") return
-  if(!isOwner && isGroup && config.MODE === "inbox") return
-  if(!isOwner && !isGroup && config.MODE === "groups") return
-   */
-
+      
         const bannedUsers = JSON.parse(fs.readFileSync('./lib/ban.json', 'utf-8'));
         const isBanned = bannedUsers.includes(sender);
 
