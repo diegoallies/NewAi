@@ -75,14 +75,6 @@ const clearTempDir = () => {
     // Clear the temp directory every 5 minutes
   setInterval(clearTempDir, 5 * 60 * 1000);
 
-//=============================================
-
-
-
-//===================SESSION-LOADING=========================
-const sessionDir = path.join(__dirname, 'sessions');
-const credsPath = path.join(sessionDir, 'creds.json');
-
 
 //===================SESSION-LOADING=========================
 
