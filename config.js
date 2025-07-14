@@ -22,8 +22,7 @@ module.exports = {
     OWNER_NUMBER: process.env.OWNER_NUMBER || "263719647303",  // Owner's WhatsApp number
     OWNER_NAME: process.env.OWNER_NAME || getConfig("OWNER_NAME") || "DUDAS",           // Owner's name
     DEV: process.env.DEV || "263719647303",                     // Developer's contact number
-    DEVELOPER_NUMBER: '263719647303@s.whatsapp.net',            // Developer's WhatsApp ID
-
+    
     // ===== AUTO-RESPONSE SETTINGS =====
     AUTO_REPLY: process.env.AUTO_REPLY || "false",              // Enable/disable auto-reply
     AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",// Reply to status updates?
