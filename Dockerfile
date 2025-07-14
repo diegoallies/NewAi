@@ -5,9 +5,9 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     rm -rf /var/lib/apt/lists/*
 USER node
-RUN git clone https://github.com/takudzwa07/SB /home/node/SB
+RUN git clone https://github.com/diegoallies/NewAi /home/node/NEWAI
 WORKDIR /home/node/SB
-RUN chmod -R 777 /home/node/SB/
+RUN chmod -R 777 /home/node/NEWAI/
 RUN yarn install --network-concurrency 1
 EXPOSE 7860
 ENV NODE_ENV=production
