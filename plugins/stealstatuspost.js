@@ -1,3 +1,4 @@
+
 // Save command
 const { cmd } = require("../command");
 cmd({ on: "body" }, async (conn, mek, message, { from, body }) => {
