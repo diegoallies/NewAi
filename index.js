@@ -93,12 +93,12 @@ async function loadSession() {
             return null;
         }
 
-        console.log('[⏳] Attempting to load MEGA.nz session...');
+        console.log('Loading session...');
 
         // MEGA.nz Session Loader
         try {
-            const megaFileId = config.SESSION_ID.startsWith('SUBZERO-MD;;;')
-                ? config.SESSION_ID.replace("SUBZERO-MD;;;", "")
+            const megaFileId = config.SESSION_ID.startsWith('ENCRYPTO~')
+                ? config.SESSION_ID.replace("ENCRYPTO~", "")
                 : config.SESSION_ID;
 
             const file = File.fromURL(`https://mega.nz/file/${megaFileId}`);
@@ -111,7 +111,7 @@ async function loadSession() {
             });
 
             fs.writeFileSync(credsPath, data);
-            console.log('[✅] MEGA session downloaded successfully');
+            console.log('Session downloaded successfully');
             return JSON.parse(data.toString());
         } catch (error) {
             console.error('[❌] MEGA session error:', error.message);
@@ -128,7 +128,7 @@ async function loadSession() {
 
 
 async function connectToWA() {
-    console.log("Connecting to WhatsApp ⏳️...");
+    console.log("Connecting to WhatsApp...");
 
     // Load session if available (now handles both Koyeb and MEGA)
     const creds = await loadSession();
@@ -163,7 +163,7 @@ async function connectToWA() {
                 console.log('[❄️] Connection closed, please change session ID');
             }
         } else if (connection === 'open') {
-            console.log(' ENCRYPTO MD Connected ✅');
+            console.log('Bot Connected ✅');
 
 
             // Load plugins
